@@ -10,43 +10,21 @@
             background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
-            font-family: Arial, sans-serif;
-            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333; /* Change to your preferred text color */
         }
 
         header {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.8); /* Change to an attractive color */
             padding: 10px;
             text-align: center;
         }
 
-        .short-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        .contact-info {
-            font-size: 0.8em;
-        }
-
-        .instagram-link {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px;
-            border: 1px solid #fff;
-            border-radius: 5px;
-        }
-
         .quote {
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin: 20px 0;
+            color: #fff; /* Change to your preferred text color */
         }
 
         .bio-section {
@@ -56,7 +34,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.8); /* Change to an attractive color */
             border-radius: 10px;
         }
 
@@ -66,7 +44,7 @@
             margin-right: 20px;
         }
 
-        .artist-description {
+        .artist-details {
             flex: 1;
         }
 
@@ -84,11 +62,17 @@
         }
 
         .painting {
-            width: 30%;
+            width: 45%; /* Changed to 45% to fit 2 paintings in one column */
             margin: 10px;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .painting:hover {
+            transform: scale(1.05); /* Add a little zoom effect on hover */
         }
 
         .painting img {
@@ -100,7 +84,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.8); /* Change to an attractive color */
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -108,26 +92,20 @@
 
         .copyright {
             font-size: 0.8em;
+            color: #333; /* Change to your preferred text color */
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="short-header">
-            <div class="logo">Bratsart</div>
-            <div class="contact-info">Contact: your@email.com | Phone: +1 (123) 456-7890</div>
-            <a href="https://www.instagram.com/bratsart?igshid=MXhqbnRtdDlramZ3aA==" class="instagram-link"
-                target="_blank">Instagram</a>
-        </div>
+        <div class="quote">"Art is not what you see, but what you make others see."</div>
     </header>
-
-    <div class="quote">"Art is not what you see, but what you make others see."</div>
 
     <section class="bio-section">
         <img class="artist-photo" src="images/photo_2024-01-09_18-07-34.jpg" alt="Your Photo">
-        <div class="artist-description">
-            <h2>Afnan Shora</h2>
+        <div class="artist-details">
+            <h2 style="color: #333;">Afnan Shora</h2>
             <p>I'm Afnan Shora, a self-taught artist and design enthusiast. My passion for painting landscapes has been a
                 lifelong journey, marked by triumphs at the Gulmarg winter festival and clinching 2nd place nationally at
                 the NIT mural painting competition. Aside from my artistic pursuits, I'm a state-level skier, proudly
@@ -136,9 +114,10 @@
                 accomplishments here!</p>
         </div>
         <div class="social-icons">
-            <span class="social-icon">&#128171;</span>
-            <span class="social-icon">&#128073;</span>
-            <span class="social-icon">&#128172;</span>
+            <a href="https://www.instagram.com/bratsart?igshid=MXhqbnRtdDlramZ3aA==" class="instagram-link"
+                target="_blank">&#128171;</a>
+            <a href="https://www.linkedin.com/in/afnan-reyaz-0080a6265" class="linkedin-link"
+                target="_blank">&#128100;</a>
         </div>
     </section>
 
