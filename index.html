@@ -19,19 +19,20 @@
             background-color: #3498db;
             color: white;
             text-align: center;
-            padding: 0.5em;
+            padding: 1em 0;
         }
 
         .short-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.5em;
+            padding: 0 1em;
         }
 
         .logo {
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: bold;
+            letter-spacing: 2px;
         }
 
         .contact-info {
@@ -43,8 +44,8 @@
             color: #fff;
             text-decoration: none;
             background-color: #e67e22;
-            padding: 0.2em 0.5em;
-            border-radius: 5px;
+            padding: 0.5em 1em;
+            border-radius: 8px;
             transition: background-color 0.3s ease-in-out;
         }
 
@@ -52,11 +53,12 @@
             background-color: #d35400;
         }
 
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 2em;
+        .quote {
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+            color: #555;
+            margin: 1em 0;
         }
 
         .bio-section {
@@ -76,6 +78,7 @@
             border-radius: 50%;
             max-width: 200px;
             margin-right: 1em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
 
         .artist-description {
@@ -84,21 +87,13 @@
             font-family: 'Georgia', serif;
         }
 
-        .quote {
-            text-align: center;
-            font-style: italic;
-            font-weight: bold;
-            color: #555;
-            margin-top: 1em;
-        }
-
         .painting {
             flex: 0 0 23%;
             margin: 1em;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 12px;
             cursor: pointer;
         }
 
@@ -106,6 +101,8 @@
             max-width: 100%;
             height: auto;
             display: block;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
         }
 
         .painting:hover {
@@ -128,7 +125,7 @@
         .painting-expanded img {
             max-width: 80%;
             max-height: 80%;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
@@ -136,7 +133,7 @@
             background-color: #3498db;
             color: white;
             text-align: center;
-            padding: 0.5em;
+            padding: 1em 0;
             position: fixed;
             width: 100%;
             bottom: 0;
