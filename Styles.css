@@ -81,13 +81,14 @@ header {
 }
 
 .painting {
-    flex: 0 0 23%;
+    flex: 0 0 calc(25% - 2em);
     margin: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
     border-radius: 12px;
     cursor: pointer;
+
 }
 
 .painting img {
