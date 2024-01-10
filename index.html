@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bratsart</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -33,6 +32,7 @@
             font-size: 2em;
             font-weight: bold;
             letter-spacing: 2px;
+            cursor: pointer;
         }
 
         .contact-info {
@@ -47,6 +47,8 @@
             padding: 0.5em 1em;
             border-radius: 8px;
             transition: background-color 0.3s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-left: 1em;
         }
 
         .instagram-link:hover {
@@ -87,8 +89,15 @@
             font-family: 'Georgia', serif;
         }
 
+        .painting-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
         .painting {
-            flex: 0 0 23%;
+            flex: 0 0 calc(25% - 1em);
             margin: 1em;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
@@ -155,6 +164,24 @@
         .copyright:hover {
             color: #fff;
         }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
+
+        .social-icon {
+            font-size: 1.5em;
+            color: #3498db;
+            margin: 0 0.5em;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icon:hover {
+            color: #2980b9;
+        }
     </style>
 </head>
 
@@ -183,9 +210,14 @@
                 for Ganderbal Municipality, showcasing my versatility and celebrated talent. Explore my artistic world and
                 accomplishments here!</p>
         </div>
+        <div class="social-icons">
+            <span class="social-icon">&#128171;</span>
+            <span class="social-icon">&#128073;</span>
+            <span class="social-icon">&#128172;</span>
+        </div>
     </section>
 
-    <section>
+<section>
         <div class="painting">
             <img src="images/photo_2024-01-09_17-59-10.jpg" alt="Painting 1">
         </div>
