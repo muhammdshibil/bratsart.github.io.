@@ -5,184 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bratsart</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            transition: background-color 0.5s ease-in-out;
-        }
-
-        header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        .short-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 1em;
-        }
-
-        .logo {
-            font-size: 2em;
-            font-weight: bold;
-            letter-spacing: 2px;
-            cursor: pointer;
-        }
-
-        .contact-info {
-            font-size: 0.8em;
-            color: #ecf0f1;
-        }
-
-        .instagram-link {
-            color: #fff;
-            text-decoration: none;
-            background-color: #e67e22;
-            padding: 0.5em 1em;
-            border-radius: 8px;
-            transition: background-color 0.3s ease-in-out;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            margin-left: 1em;
-        }
-
-        .instagram-link:hover {
-            background-color: #d35400;
-        }
-
-        .quote {
-            text-align: center;
-            font-style: italic;
-            font-weight: bold;
-            color: #555;
-            margin: 1em 0;
-        }
-
-        .bio-section {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 2em;
-            background-color: #ecf0f1;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin: 2em auto;
-            max-width: 800px;
-        }
-
-        .artist-photo {
-            border-radius: 50%;
-            max-width: 200px;
-            margin-right: 1em;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .artist-description {
-            max-width: 500px;
-            color: #333;
-            font-family: 'Georgia', serif;
-        }
-
-        .painting-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 2em;
-        }
-
-        .painting {
-            flex: 0 0 calc(25% - 1em);
-            margin: 1em;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-            overflow: hidden;
-            border-radius: 12px;
-            cursor: pointer;
-        }
-
-        .painting img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 12px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .painting:hover {
-            transform: scale(1.05);
-        }
-
-        .painting-expanded {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .painting-expanded img {
-            max-width: 80%;
-            max-height: 80%;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        footer {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            transition: background-color 0.5s ease-in-out;
-        }
-
-        .copyright {
-            font-size: 0.7em;
-            margin: 0;
-            padding: 0.2em;
-            color: #ccc;
-            transition: color 0.5s ease-in-out;
-        }
-
-        footer:hover {
-            background-color: #2980b9;
-        }
-
-        .copyright:hover {
-            color: #fff;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-        }
-
-        .social-icon {
-            font-size: 1.5em;
-            color: #3498db;
-            margin: 0 0.5em;
-            cursor: pointer;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .social-icon:hover {
-            color: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -198,17 +21,12 @@
     <div class="quote">"Art is not what you see, but what you make others see."</div>
 
     <section class="bio-section">
-        <img class="artist-photo"
-            src="images/photo_2024-01-09_18-07-34.jpg"
-            alt="Your Photo">
+        <img class="artist-photo" src="images/photo_2024-01-09_18-07-34.jpg" alt="Your Photo">
         <div class="artist-description">
             <h2>Afnan Shora</h2>
             <p>I'm Afnan Shora, a self-taught artist and design enthusiast. My passion for painting landscapes has been a
                 lifelong journey, marked by triumphs at the Gulmarg winter festival and clinching 2nd place nationally at
-                the NIT mural painting competition. Aside from my artistic pursuits, I'm a state-level skier, proudly
-                featured on the Khelo India platform. Notably, my artistic endeavors include a captivating mural project
-                for Ganderbal Municipality, showcasing my versatility and celebrated talent. Explore my artistic world and
-                accomplishments here!</p>
+                the NIT mural painting competition...</p>
         </div>
         <div class="social-icons">
             <span class="social-icon">&#128171;</span>
@@ -217,7 +35,7 @@
         </div>
     </section>
 
-<section>
+    <section class="painting-container">
         <div class="painting">
             <img src="images/photo_2024-01-09_17-59-10.jpg" alt="Painting 1">
         </div>
@@ -274,15 +92,7 @@
         <p class="copyright">&copy; 2024 Bratsart. All rights reserved.</p>
     </footer>
 
-    <script>
-        const paintings = document.querySelectorAll('.painting');
-
-        paintings.forEach(painting => {
-            painting.addEventListener('click', () => {
-                painting.classList.toggle('painting-expanded');
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
